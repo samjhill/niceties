@@ -1,0 +1,30 @@
+body{
+    background: #141414;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+label{
+    padding: 1em;
+}
+#compliment{
+    margin: 0 auto;
+    font-size: 4em;
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#about{
+    position: absolute;
+    bottom: 0;
+    font-size: 4em;
+    padding: 1em;
+}
+
+#myModal{
+    color: #333333;
+}

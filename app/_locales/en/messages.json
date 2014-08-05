@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Niceties",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Presents a compliment when you open a new tab",
+    "description": "The description of the application"
+  }
+}
