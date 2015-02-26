@@ -55,6 +55,18 @@ $( document ).ready(function() {
         
     });
     
+    //checkbox click
+    $('#bg-image').on('click', function() {
+        var isChecked = $('#bg-image').is(':checked');
+        console.log(isChecked);
+    });
+    
+    //external link click
+    $('.ext_link').on('click', function() {
+        //console.log();
+        window.open($(this)[0].href);
+    });
+    
     /*
      * Get images from Imgur
      */
