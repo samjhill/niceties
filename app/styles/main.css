@@ -1,7 +1,12 @@
 body{
+    display: none;
     background: rgb(46, 199, 255);
     color: white;
     font-family: 'Open Sans', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 ul{
