@@ -30,11 +30,22 @@ $( document ).ready(function() {
     // Background image
     if (showImages == 'true') { //set in user preferences
         var albumData = getAlbum('jx90V');
+        //make sure the preferences checkbox is checked
+        $('#bg-image').prop('checked', true);
+        
     }
     else { // just show a normal colored background
         $("body").fadeIn();
+        //make sure the preferences checkbox is checked
+        $('#bg-image').prop('checked', false);
+        //show the bg color picker section
+        $('#bg-color-section').css('display', 'block');
     }
     
+    //share button click
+    $('#share-button').on('click', function(){
+        $('#social').slideToggle();
+    });
     
     //save button click
     $('#save-changes').on('click', function(){
@@ -43,27 +54,29 @@ $( document ).ready(function() {
         
         document.cookie="bgColor=" + bg;
         document.cookie="fontColor=" + font;
+        document.cookie="showImages=" + $('#bg-image').is(':checked');
         
         //update colors
         $(document.body).css('background', bg);
         $('#compliment').css('color', font);
         $('#about').css('color', font);
     
-        console.log('saved colors');
+        console.log('saved preferences');
         console.log('bg: ' + bg);
         console.log('font: ' + font);
+        console.log('showImages: ' + $('#bg-image').is(':checked'));
         
+        //reload the page
+        location.reload();
     });
     
-    //checkbox click
+    //background image checkbox click
     $('#bg-image').on('click', function() {
-        var isChecked = $('#bg-image').is(':checked');
-        console.log(isChecked);
+        $('#bg-color-section').slideToggle();
     });
     
     //external link click
     $('.ext_link').on('click', function() {
-        //console.log();
         window.open($(this)[0].href);
     });
     

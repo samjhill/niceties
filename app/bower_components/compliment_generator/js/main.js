@@ -24,7 +24,7 @@
 
     window.getCompliment = getCompliment;
     getCompliment();
-    window.onclick = getCompliment;
+    //window.onclick = getCompliment;
     function getCompliment()
     {
 	var a = Math.floor((Math.random() * adjective.length) + 1) - 1;

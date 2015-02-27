@@ -17,15 +17,31 @@
     <div id="compliment">
     </div>
     
-    <!-- Button trigger modal -->
-    <div id="about" data-toggle="modal" data-target="#myModal">
-      <i class="fa fa-cog"></i>
+    <div id="social">
+        <ul>
+            <li><a class="fa fa-twitter" href="https://twitter.com/home?status=A%20feel-good%20New%20Tab%20page!%20goo.gl/icdPbX"></a></li>
+            <li><a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=goo.gl/icdPbX"></a></li>
+            <li><a class="fa fa-google-plus-square" href="https://plus.google.com/share?url=goo.gl/icdPbX"></a></li>
+        </ul>    
     </div>
     
-    <div id="photo-credit">
-        <p>Photos courtesy of <a href="http://www.imgur.com">imgur.com</a></p>
-    </div>
-    
+    <footer id="footer">
+        <!-- Button trigger modal -->
+        <div id="about" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-cog"></i>
+        </div>
+        
+        <div id="photo-credit">
+            <p>Photos courtesy of <a class="ext_link" href="http://www.imgur.com">imgur.com</a></p>
+        </div>
+        
+        <!-- Share button -->
+        <div id="share">
+            <i id="share-button" class="fa fa-share-alt"></i>
+        </div>
+        
+    </footer>
+ 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -35,7 +51,7 @@
             <h4 class="modal-title" id="myModalLabel">Settings</h4>
           </div>
           <div class="modal-body">
-            Created in a couple hours by <a target="_newtab" class="ext_link" href="http://www.samjhill.com">Sam J Hill</a>, with lots of help from
+            Created in a couple hours by <a target="_newtab" class="ext_link" href="http://www.samjhill.com">Sam J Hill</a>, with lots of design help from <a target="_newtab" class="ext_link" href="https://www.linkedin.com/in/tawanghar">Art Tawanghar</a> and these tools:
             <ul>
                 <li><a target="_newtab" class="ext_link" href="http://yeoman.io/">Yeoman</a> - an awesome scaffolding tool</li>
                 <li><a target="_newtab" class="ext_link" href="http://getbootstrap.com/">Bootstrap</a> - for nice front-end effects</li>
@@ -44,11 +60,11 @@
                 <li><a target="_newtab" class="ext_link" href="http://alexgord.github.io/compliment_generator/">Compliment Generator</a> - the meat of this app</li>
             </ul>
             
-            <div class="row"><label for="color-picker-bg">Background color </label><input id="color-picker-bg" class="color" /></div>
             <div class="row"><label for="color-picker-font">Text color </label><input id="color-picker-font" class="color" /></div>
-            <div class="row"><label for="bg-image">Background Image</label><input type="checkbox" id="bg-image" />
-                 Have a slow internet connection? Disable this.
+            <div class="row"><label for="bg-image">Background Image</label><input type="checkbox" id="bg-image" value="bg" />
+                 Have a slow internet connection? Turn this off.
             </div>
+            <div class="row" id="bg-color-section"><label for="color-picker-bg">Background color </label><input id="color-picker-bg" class="color" /></div>
           </div>
           <div class="modal-footer">
             <button id="close-button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
