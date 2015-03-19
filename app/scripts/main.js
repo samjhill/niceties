@@ -103,6 +103,7 @@ $( document ).ready(function() {
               
               $(bgimage).load(function(){
                     $("body").css("background","url('"+ $(bgimage).attr('src') +"') no-repeat center center fixed");
+                    $(document.body).css('background-color', '#333333');
                     $(document.body).css('background-size', '100%');
                     $("body").fadeIn();
               });
