@@ -51,6 +51,12 @@
             <h4 class="modal-title" id="myModalLabel">Settings</h4>
           </div>
           <div class="modal-body">
+            <div class="row"><label for="color-picker-font">Text color </label><input id="color-picker-font" class="color" /></div>
+            <div class="row"><label for="bg-image">Background Image</label><input type="checkbox" id="bg-image" value="bg" />
+                 Have a slow internet connection? Turn this off.
+            </div>
+            <div class="row" id="bg-color-section"><label for="color-picker-bg">Background color </label><input id="color-picker-bg" class="color" /></div>
+          
             Created in a couple hours by <a target="_newtab" class="ext_link" href="http://www.samjhill.com">Sam J Hill</a>, with lots of design help from <a target="_newtab" class="ext_link" href="https://www.linkedin.com/in/tawanghar">Art Tawanghar</a> and these tools:
             <ul>
                 <li><a target="_newtab" class="ext_link" href="http://yeoman.io/">Yeoman</a> - an awesome scaffolding tool</li>
@@ -59,13 +65,9 @@
                 <li><a target="_newtab" class="ext_link" href="http://fontawesome.io">Font-awesome</a> - for icons</li>
                 <li><a target="_newtab" class="ext_link" href="http://alexgord.github.io/compliment_generator/">Compliment Generator</a> - the meat of this app</li>
             </ul>
-            
-            <div class="row"><label for="color-picker-font">Text color </label><input id="color-picker-font" class="color" /></div>
-            <div class="row"><label for="bg-image">Background Image</label><input type="checkbox" id="bg-image" value="bg" />
-                 Have a slow internet connection? Turn this off.
-            </div>
-            <div class="row" id="bg-color-section"><label for="color-picker-bg">Background color </label><input id="color-picker-bg" class="color" /></div>
           </div>
+          
+          
           <div class="modal-footer">
             <button id="close-button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button id="save-changes" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>

@@ -76,9 +76,9 @@ $( document ).ready(function() {
     });
     
     //external link click
-    $('.ext_link').on('click', function() {
-        window.open($(this)[0].href);
-    });
+    //$('.ext_link').on('click', function() {
+    //    window.open($(this)[0].href);
+    //});
     
     /*
      * Get images from Imgur
@@ -103,6 +103,7 @@ $( document ).ready(function() {
               
               $(bgimage).load(function(){
                     $("body").css("background","url('"+ $(bgimage).attr('src') +"') no-repeat center center fixed");
+                    $(document.body).css('background-size', '100%');
                     $("body").fadeIn();
               });
                 

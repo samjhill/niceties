@@ -13,6 +13,10 @@ ul{
     list-style-type: none;
 }
 
+a:hover {
+    color: grey !important;    
+}
+
 label{
     padding: 1em;
 }
@@ -76,6 +80,7 @@ label{
 }
 
 #social {
+    color: white;
     display: none;
     position: absolute;
     text-align: right;
@@ -86,7 +91,8 @@ label{
     transition: color .1s;
 }
 
-#social a:hover{
+#social a, a:hover{
+    color: white;
     text-decoration: none;
 }
 

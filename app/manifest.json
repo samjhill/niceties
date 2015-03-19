@@ -1,11 +1,8 @@
 {
     "name": "Niceties",
-    "version": "0.0.5",
+    "version": "0.0.8",
     "manifest_version": 2,
     "description": "A cool extension that makes you happy!",
-    "permissions": [
-          "tabs"
-    ],
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
