@@ -89,6 +89,10 @@ $( document ).ready(function() {
         console.log('showImages: ' + $('#bg-image').is(':checked'));
         
         //reload the page
+        $('body').css('background-image', 'none');
+        $('#compliment').css('color', 'black');
+        $('#compliment').text('Restarting. One moment, please.');
+        $('body').fadeOut('slow');
         location.reload();
     });
     
