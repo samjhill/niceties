@@ -51,6 +51,21 @@
             <h4 class="modal-title" id="myModalLabel">Settings</h4>
           </div>
           <div class="modal-body">
+            <div class="row">
+                <label>Theme</label>
+                <div class="btn-group" id="theme-selection" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                      <input type="radio" name="theme-options" id="nature-theme" value="nature"> Nature
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="theme-options" id="space-theme" value="space"> Space
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="theme-options" id="technology-theme" value="technology"> Technology
+                    </label>
+                </div>
+            </div>
+            
             <div class="row"><label for="color-picker-font">Text color </label><input id="color-picker-font" class="color" /></div>
             <div class="row"><label for="bg-image">Background Image</label><input type="checkbox" id="bg-image" value="bg" />
                  Have a slow internet connection? Turn this off.
