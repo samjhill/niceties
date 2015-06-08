@@ -23,12 +23,17 @@ $( document ).ready(function() {
         console.log('theme: ' + theme);
     }
     else { //they don't have any preferences set; let's give them some defaults
-        document.cookie="bgColor=#333333";
-        document.cookie="fontColor=#FFFFFF";
-        document.cookie="showImages=true";
-        document.cookie="theme=nature";
+        bgColor="#333333";
+        fontColor="#FFFFFF";
+        showImages="true";
+        theme="nature";
         
-        console.log(document.cookie);
+         console.log('bg: ' + bgColor);
+        console.log('font: ' + fontColor);
+        console.log('images: ' + showImages);
+        console.log('theme: ' + theme);
+        
+        //console.log(document.cookie);
     }
     
     //set up styles
