@@ -10,7 +10,12 @@
 		     "awesome", "incredible", "fantastic", "cool",
 		     "lovely", "dashing", "funny", "sharp", "confident",
 		     "shining", "inspiring", "fantastic", "irreplaceable",
-		     "unique", "valuable", "magical", "witty", "good"];
+		     "unique", "valuable", "magical", "witty", "good", "imaginative", "iconic",
+		     "masterful", "unmistakable", "unbreakable", "happy", "upbeat", "forward-thinking",
+		     "adventurous", "ambitious", "brave", "bright", "broad-minded", "charming", "compassionate",
+		     "considerate", "courteous", "decisive", "determined", "diligent", "enthusiastic",
+		     "faithful", "fearless", "generous", "gentle", "helpful", "honest", "intuitive", "optimistic", "pioneering",
+		     "polite", "quick-witted", "rational", "self-confident", "self-disciplined", "straightforward", "warmhearted"];
 
     var noun = ["human being", "person", "fluffy bunny",
 		"image of perfection", "warrior", "jedi", "friend",
