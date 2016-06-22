@@ -26,7 +26,7 @@ $( document ).ready(function() {
         bgColor="#333333";
         fontColor="#FFFFFF";
         showImages="true";
-        theme="nature";
+        theme="chromecast";
         
          console.log('bg: ' + bgColor);
         console.log('font: ' + fontColor);
@@ -44,6 +44,24 @@ $( document ).ready(function() {
     // Background image
     if (showImages == 'true') { //set in user preferences
         var albumData;
+        if ( theme == 'chromecast' ) {
+            $.get('images/chromecast.json',function(data) {
+                data = JSON.parse(data);
+                var image = data[Math.floor(Math.random()*data.length)];
+                var bgimage = new Image();  
+                bgimage.src=image['url'];
+                  
+                $(bgimage).load(function(){
+                        $("body").css("background","url('"+ $(bgimage).attr('src') +"') no-repeat center center fixed");
+                        $(document.body).css('background-color', '#333333');
+                        $(document.body).css('background-size', 'cover');
+                        $("body").fadeIn();
+
+                        $('#photo-credit').text('Thanks, Google Chromecast, for the photo');
+                        $('#photo-credit').text(image['author']);
+                  });
+            });
+        }
         if ( theme == 'nature' ) {
             albumData = getAlbum('jx90V');
         }
